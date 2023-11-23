@@ -65,8 +65,13 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            font-size: 18px; /* Adjusted font size for better readability */
+            font-size: 24px; /* Adjusted font size for better readability */
             text-align: center;
+        }
+
+        button i {
+            font-size: 60px; /* Adjusted font size for the big logo */
+            margin-bottom: 10px; /* Increased margin for better spacing */
         }
 
         button:nth-child(1) {
@@ -89,12 +94,8 @@
             filter: brightness(90%); /* Darken the button on hover */
         }
 
-        i {
-            margin-bottom: 5px;
-        }
-
         span {
-            font-size: 16px;
+            font-size: 20px; /* Increased font size for button text */
         }
 
         @media (max-width: 600px) {
@@ -123,7 +124,7 @@
         </button>
 
         <!-- Food Status Button with Icon -->
-        <button onclick="window.location.href='https://alfaiot.io/Dashboard/TestDashboard/Bill.htmll'">
+        <button onclick="window.location.href='https://alfaiot.io/Dashboard/TestDashboard/Bill.html'">
             <i class="fas fa-heartbeat"></i>
             <span>Food Status</span>
         </button>
