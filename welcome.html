@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    
+    <!-- Include Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin: 20px; /* Adjusted margin for better mobile view */
+            background-color: #ffe6f2; /* Light pink background color */
+        }
+
+        h1 {
+            color: #ff3399; /* Dark pink text color */
+            font-weight: bold; /* Make the text bold */
+            font-size: 35px; /* Increased font size for mobile */
+            margin-bottom: 20px; /* Adjusted margin for better mobile view */
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            height: auto; /* Remove fixed height to allow content to determine height */
+        }
+
+        button {
+            min-width: 150px; /* Set a minimum width for the buttons */
+            height: 150px; /* Set a fixed height for the buttons */
+            margin: 10px;
+            background-color: #ff66b2; /* Medium pink button background color */
+            color: #ffffff; /* White button text color */
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            display: inline-block;
+            font-size: 18px; /* Adjusted font size for better readability */
+            text-align: center;
+            vertical-align: middle;
+            line-height: 150px; /* Aligns the text vertically */
+        }
+
+        button:hover {
+            background-color: #ff3385; /* Dark pink button background color on hover */
+        }
+
+        /* Style for icons */
+        i {
+            margin-right: 5px;
+        }
+
+        @media (max-width: 600px) {
+            /* Adjust styles for smaller screens (e.g., mobile phones) */
+            button {
+                width: calc(50% - 20px); /* Make buttons take 50% width with some margin */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>PP NEVER DIE</h1>
+
+    <div class="button-container">
+        <!-- Menu Button with Icon -->
+        <button onclick="window.location.href='https://alfaiot.io/Dashboard/TestDashboard/FoodOrder.html'">
+            <i class="fas fa-utensils"></i> Menu
+        </button>
+
+        <!-- Food Status Button with Icon -->
+        <button onclick="window.location.href='food_status.html'">
+            <i class="fas fa-heartbeat"></i> Food Status
+        </button>
+
+        <!-- Call for Help Button with Icon -->
+        <button onclick="window.location.href='call_for_help.html'">
+            <i class="fas fa-hands-helping"></i> Call for Help
+        </button>
+
+        <!-- Bills Button with Icon -->
+        <button onclick="window.location.href='bills.html'">
+            <i class="fas fa-file-invoice-dollar"></i> Bills
+        </button>
+    </div>
+
+</body>
+</html>
