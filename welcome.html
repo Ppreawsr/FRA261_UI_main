@@ -46,6 +46,10 @@
             font-weight: bold; /* Make the text bold */
         }
 
+        .language-dropdown {
+            margin-right: 20px; /* Add margin to the right side of the dropdown */
+        }
+
         .button-container {
             display: flex;
             justify-content: center;
@@ -126,6 +130,15 @@
             <i class="fas fa-hippo"></i>
             <span>QR Eat</span>
         </a>
+
+        <!-- Language Dropdown -->
+        <div class="language-dropdown">
+            <label for="language">Language: </label>
+            <select id="language" onchange="changeLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="th">ไทย</option>
+            </select>
+        </div>
     </header>
 
     <div class="button-container">
@@ -159,5 +172,12 @@
         <span style="font-weight: light;">Copyright © QR Eat 2023</span>
     </footer>
 
+    <script>
+        function changeLanguage(language) {
+            // You can add logic here to change the language
+            // For now, it's just a placeholder function
+            console.log("Selected language:", language);
+        }
+    </script>
 </body>
 </html>
