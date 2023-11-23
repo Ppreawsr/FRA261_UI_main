@@ -14,6 +14,9 @@
             text-align: center;
             margin: 0; /* Remove default margin */
             background-color: #f2f2f2; /* Light grey background color */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure a minimum height of the viewport */
         }
 
         header {
@@ -49,7 +52,6 @@
             align-items: center;
             flex-wrap: wrap;
             gap: 10px;
-            height: auto; /* Remove fixed height to allow content to determine height */
             margin: 20px 0; /* Adjusted margin for better spacing */
         }
 
@@ -98,8 +100,18 @@
             font-size: 20px; /* Increased font size for button text */
         }
 
+        footer {
+            background-color: #f2f2f2; /* Light grey background color for the footer */
+            color: #666; /* Grey text color for the footer */
+            padding: 15px; /* Padding for the footer */
+            margin-top: auto; /* Push the footer to the bottom */
+        }
+
         @media (max-width: 600px) {
             /* Adjust styles for smaller screens (e.g., mobile phones) */
+            header {
+                padding: 10px; /* Adjusted padding for smaller screens */
+            }
             button {
                 width: calc(50% - 20px); /* Make buttons take 50% width with some margin */
             }
@@ -124,7 +136,7 @@
         </button>
 
         <!-- Food Status Button with Icon -->
-        <button onclick="window.location.href='https://alfaiot.io/Dashboard/TestDashboard/Bill.html'">
+        <button onclick="window.location.href='Food_status.html'">
             <i class="fas fa-hourglass-half" style="color: #ffffff;"></i>
             <span>Food Status</span>
         </button>
@@ -136,11 +148,16 @@
         </button>
 
         <!-- Check Bills Button with Icon -->
-        <button onclick="window.location.href='bills.html'">
+        <button onclick="window.location.href='https://alfaiot.io/Dashboard/TestDashboard/Bill.html'">
             <i class="fas fa-cash-register" style="color: #ffffff;"></i>
             <span>Check Bills</span>
         </button>
     </div>
+
+    <footer>
+        <!-- Copyright notice -->
+        <span style="font-weight: light;">Copyright © QR Eat 2023</span>
+    </footer>
 
 </body>
 </html>
