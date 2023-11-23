@@ -53,7 +53,22 @@
             margin: 20px 0; /* Adjusted margin for better spacing */
         }
 
-        /* You can customize the button colors and gradients here */
+        button {
+            min-width: 150px; /* Set a minimum width for the buttons */
+            height: 150px; /* Set a fixed height for the buttons */
+            margin: 10px;
+            color: #ffffff; /* White button text color */
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px; /* Adjusted font size for better readability */
+            text-align: center;
+        }
+
         button:nth-child(1) {
             background: linear-gradient(45deg, #e57373, #d32f2f); /* Red button background gradient */
         }
@@ -70,28 +85,16 @@
             background: linear-gradient(45deg, #ffd54f, #ffa000); /* Yellow button background gradient */
         }
 
-        button {
-            min-width: 150px; /* Set a minimum width for the buttons */
-            height: 150px; /* Set a fixed height for the buttons */
-            margin: 10px;
-            color: #ffffff; /* White button text color */
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-            display: inline-block;
-            font-size: 18px; /* Adjusted font size for better readability */
-            text-align: center;
-            vertical-align: middle;
-            line-height: 150px; /* Aligns the text vertically */
-        }
-
         button:hover {
             filter: brightness(90%); /* Darken the button on hover */
         }
 
-        /* Style for icons */
         i {
-            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+
+        span {
+            font-size: 16px;
         }
 
         @media (max-width: 600px) {
@@ -115,22 +118,26 @@
     <div class="button-container">
         <!-- Menu Button with Icon -->
         <button onclick="window.location.href='https://alfaiot.io/Dashboard/TestDashboard/FoodOrder.html'">
-            <i class="fas fa-utensils"></i> Menu
+            <i class="fas fa-utensils"></i>
+            <span>Menu</span>
         </button>
 
         <!-- Food Status Button with Icon -->
         <button onclick="window.location.href='https://alfaiot.io/Dashboard/TestDashboard/Bill.htmll'">
-            <i class="fas fa-heartbeat"></i> Food Status
+            <i class="fas fa-heartbeat"></i>
+            <span>Food Status</span>
         </button>
 
         <!-- Call for Help Button with Icon -->
         <button onclick="window.location.href='call_for_help.html'">
-            <i class="fas fa-hands-helping"></i> Call for Help
+            <i class="fas fa-hands-helping"></i>
+            <span>Call for Help</span>
         </button>
 
         <!-- Bills Button with Icon -->
         <button onclick="window.location.href='bills.html'">
-            <i class="fas fa-file-invoice-dollar"></i> Bills
+            <i class="fas fa-file-invoice-dollar"></i>
+            <span>Bills</span>
         </button>
     </div>
 
